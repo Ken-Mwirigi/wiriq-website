@@ -74,7 +74,7 @@ const Nav = ({ openNav }: Props) => {
 
         <div className="flex items-center space-x-4">
           <a
-            href="/#contact"
+            href="/contact"
             className="px-5 py-2.5 relative rounded group font-bold text-gray-950 inline-block"
           >
             <span className="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-[#b6ff1c] to-green-600"></span>

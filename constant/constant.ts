@@ -6,22 +6,22 @@ export const NavLinks = [
   },
   {
     id: 2,
-    url: "#about", // Will scroll to your "About Us" section
+    url: "/#about", // Will scroll to your "About Us" section
     label: "About Us",
   },
   {
     id: 3,
-    url: "#services", // Will scroll to your "Services" section
+    url: "/#services", // Will scroll to your "Services" section
     label: "Services",
   },
   {
     id: 4,
-    url: "/portfolio", // Will scroll to your "Portfolio" section
+    url: "/#portfolio", // Will scroll to your "Portfolio" section
     label: "Portfolio",
   },
   {
     id: 5,
-    url: "#contact", // Will scroll to your "Contact Us" section
+    url: "/#contact", // Will scroll to your "Contact Us" section
     label: "Contact Us",
   },
 ];
