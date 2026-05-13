@@ -16,7 +16,7 @@ export const NavLinks = [
   },
   {
     id: 4,
-    url: "/#portfolio", // Will scroll to your "Portfolio" section
+    url: "/portfolio", // Will scroll to your "Portfolio" section
     label: "Portfolio",
   },
   {
