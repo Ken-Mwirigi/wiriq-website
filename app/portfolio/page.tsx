@@ -79,18 +79,10 @@ const PortfolioPage = () => {
         </div>
 
 
-        {/* --- PROJECT 3: PANGARENT (Image Left, Text Right) --- */}
+        {/* --- PROJECT 3: PANGARENT (Text Left, Image Slider Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          <div className="w-full">
-             {/* Passes an ARRAY of images to the horizontal slider */}
-             <ProjectSlider images={[
-               "/images/pangarent-1.webp",
-               "/images/pangarent-2.webp",
-             ]} />
-          </div>
-
-          <div>
+          <div className="order-2 lg:order-1">
             <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
               <BiCodeAlt className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Web Application (Active Dev)</span>
@@ -107,6 +99,15 @@ const PortfolioPage = () => {
               <MdOutlineVisibility className="w-5 h-5" /> View Live Project
             </a>
           </div>
+
+          <div className="order-1 lg:order-2 w-full">
+             {/* Passes an ARRAY of images to the horizontal slider */}
+             <ProjectSlider images={[
+               "/images/pangarent-1.webp",
+               "/images/pangarent-2.webp",
+             ]} />
+          </div>
+
         </div>
 
       </div>
