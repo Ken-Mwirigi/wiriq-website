@@ -51,9 +51,14 @@ const PortfolioPage = () => {
           </div>
         </div>
 
-        {/* --- PROJECT 1: COMITY SOLUTIONS (Uses the Scroller) --- */}
+        {/* --- PROJECT 2: COMITY SOLUTIONS (Image Left, Text Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div className="order-2 lg:order-1">
+          
+          <div className="w-full order-1 lg:order-1">
+             <ProjectShowcase image="/images/comity-1.webp" />
+          </div>
+
+          <div className="order-2 lg:order-2">
             <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
               <BiCodeAlt className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Corporate Website</span>
@@ -63,48 +68,18 @@ const PortfolioPage = () => {
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               <strong>The Challenge:</strong> Comity Solutions had a powerful vision for restoring wellness and vitality, but they lacked a digital home that reflected that level of care. They didn’t just need a basic online brochure; they needed an authoritative platform that could build immediate trust, articulate their mission, and seamlessly convert curious visitors into booked clients.<br/><br/>
-              <strong>The Solution:</strong>We engineered a comprehensive, multi-page digital experience from the ground up. Beyond crafting a sleek and mobile-responsive UI, we integrated a frictionless online appointment booking system to handle consultations automatically. By combining compelling, SEO-optimized copy with lightning-fast architecture, we transformed their website from a static page into an active, 24/7 client-generation engine.
+              <strong>The Solution:</strong> We engineered a comprehensive, multi-page digital experience from the ground up. Beyond crafting a sleek and mobile-responsive UI, we integrated a frictionless online appointment booking system to handle consultations automatically. By combining compelling, SEO-optimized copy with lightning-fast architecture, we transformed their website from a static page into an active, 24/7 client-generation engine.
             </p>
 
             <a href="https://comitysolutions.co.ke" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-tighter rounded bg-[#b6ff1c] text-gray-950 hover:bg-white transition-all duration-300">
               <MdOutlineVisibility className="w-5 h-5" /> Visit Website
             </a>
           </div>
-          
-          <div className="order-1 lg:order-2 w-full">
-             {/* Passes just ONE image to the auto-scroller */}
-             <ProjectShowcase image="/images/comity-1.webp" />
-          </div>
-        </div>
 
-        {/* --- PROJECT 1: STUDY BRIDGE ACADEMIA (Text Left, Image Right) --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div className="order-2 lg:order-1">
-            <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
-              <BiCodeAlt className="w-6 h-6" />
-              <span className="text-sm font-bold uppercase tracking-wider">Educational Platform</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Study Bridge Academia
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              <strong>The Challenge:</strong> Study Bridge Academia needed a robust digital platform to position themselves as a premier gateway for students pursuing elite international curricula (Pearson International GCSEs, A Levels, and Cambridge IGCSE). They required an environment that could effortlessly convey academic rigor, build trust with ambitious parents and learners, and streamline consultation bookings.<br/><br/>
-              <strong>The Solution:</strong> We engineered a lightning-fast, highly responsive educational portal featuring structured course layouts, intuitive navigation, and integrated consultation workflows. The platform serves as an authoritative digital hub, transforming visitor engagement into consistent student enrollments.
-            </p>
-
-            <a href="https://studybridgeacademia.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-tighter rounded bg-[#b6ff1c] text-gray-950 hover:bg-white transition-all duration-300">
-              <MdOutlineVisibility className="w-5 h-5" /> Visit Website
-            </a>
-          </div>
-          
-          <div className="order-1 lg:order-2 w-full">
-             {/* Passes just ONE image to the auto-scroller */}
-             <ProjectShowcase image="/images/Studybridge-2.webp" />
-          </div>
         </div>
 
 
-        {/* --- PROJECT 2: PANGARENT (Uses the Slider) --- */}
+        {/* --- PROJECT 3: PANGARENT (Image Left, Text Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="w-full">
