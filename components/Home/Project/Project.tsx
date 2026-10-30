@@ -30,6 +30,31 @@ const Project = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 items-start">
           
+
+
+          {/* Project 2: Nexus Global Sustainability */}
+          <div data-aos="fade-up">
+            <ProjectCard
+              image="/images/nexus-image-1.webp"
+              title="Nexus Global Sustainability"
+              category="ESG Advisory Platform"
+              liveLink="https://nexusglobalsustainability.com"
+              portfolioLink="/portfolio" // Updated to main portfolio page
+            />
+          </div>
+
+         {/* Project 2: Study Bridge Academia */}
+          <div data-aos="fade-up">
+            <ProjectCard
+              image="/images/studybridge-1.webp"
+              title="Study Bridge Academia"
+              category="Educational Platform"
+              liveLink="https://studybridgeacademia.com"
+              portfolioLink="/portfolio" // Updated to main portfolio page
+            />
+          </div>
+         
+         
           {/* Project 1: Comity Solutions */}
           <div data-aos="fade-up">
             <ProjectCard
