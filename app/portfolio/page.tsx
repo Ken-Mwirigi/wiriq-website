@@ -24,10 +24,38 @@ const PortfolioPage = () => {
           </p>
         </div>
 
-        
-        {/* --- PROJECT 1: STUDY BRIDGE ACADEMIA (Text Left, Image Right) --- */}
+        {/* --- PROJECT 1: NEXUS GLOBAL SUSTAINABILITY (Text Left, Image Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
           <div className="order-2 lg:order-1">
+            <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
+              <BiCodeAlt className="w-6 h-6" />
+              <span className="text-sm font-bold uppercase tracking-wider">Corporate & ESG Advisory Platform</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Nexus Global Sustainability
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              <strong>The Challenge:</strong> Nexus Global Sustainability needed an authoritative digital presence capable of communicating complex ESG advisory services, climate strategies, and corporate sustainability programmes to institutional leaders. They required far more than a static corporate brochure; they needed a structured digital hub that could effortlessly organize diverse training programmes, research publications, and downloadable industry resources while guaranteeing instant load times, enterprise-grade security, and high search visibility.<br/><br/>
+              <strong>The Solution:</strong> We architected a bespoke, high-performance platform from the ground up featuring tailored content ecosystems for their advisory services, sustainability programmes, and resource library. Beyond crafting a clean, executive user interface, we implemented automated media optimization for near-instant page loads, invisible security shields that protect client inquiries without annoying verification puzzles, and a deep search-visibility framework—transforming their platform into a secure, 24/7 authority hub and client-generation engine.
+            </p>
+
+            <a href="https://nexusglobalsustainability.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-tighter rounded bg-[#b6ff1c] text-gray-950 hover:bg-white transition-all duration-300">
+              <MdOutlineVisibility className="w-5 h-5" /> Visit Website
+            </a>
+          </div>
+          
+          <div className="order-1 lg:order-2 w-full">
+             <ProjectShowcase image="/images/nexus-image.webp" />
+          </div>
+        </div>
+
+        {/* --- PROJECT 2: STUDY BRIDGE ACADEMIA (Image Left, Text Right) --- */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+          <div className="w-full order-1 lg:order-1">
+             <ProjectShowcase image="/images/Studybridge-2.webp" />
+          </div>
+
+          <div className="order-2 lg:order-2">
             <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
               <BiCodeAlt className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Educational Platform</span>
@@ -44,21 +72,11 @@ const PortfolioPage = () => {
               <MdOutlineVisibility className="w-5 h-5" /> Visit Website
             </a>
           </div>
-          
-          <div className="order-1 lg:order-2 w-full">
-             {/* Passes just ONE image to the auto-scroller */}
-             <ProjectShowcase image="/images/Studybridge-2.webp" />
-          </div>
         </div>
 
-        {/* --- PROJECT 2: COMITY SOLUTIONS (Image Left, Text Right) --- */}
+        {/* --- PROJECT 3: COMITY SOLUTIONS (Text Left, Image Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          
-          <div className="w-full order-1 lg:order-1">
-             <ProjectShowcase image="/images/comity-1.webp" />
-          </div>
-
-          <div className="order-2 lg:order-2">
+          <div className="order-2 lg:order-1">
             <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
               <BiCodeAlt className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Corporate Website</span>
@@ -76,13 +94,22 @@ const PortfolioPage = () => {
             </a>
           </div>
 
+          <div className="order-1 lg:order-2 w-full">
+             <ProjectShowcase image="/images/comity-1.webp" />
+          </div>
         </div>
 
-
-        {/* --- PROJECT 3: PANGARENT (Text Left, Image Slider Right) --- */}
+        {/* --- PROJECT 4: PANGARENT (Image Slider Left, Text Right) --- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
-          <div className="order-2 lg:order-1">
+          <div className="w-full order-1 lg:order-1">
+             {/* Passes an ARRAY of images to the horizontal slider */}
+             <ProjectSlider images={[
+               "/images/pangarent-1.webp",
+               "/images/pangarent-2.webp",
+             ]} />
+          </div>
+
+          <div className="order-2 lg:order-2">
             <div className="flex items-center space-x-2 text-green-700 dark:text-[#b6ff1c] mb-4">
               <BiCodeAlt className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Web Application (Active Dev)</span>
@@ -99,15 +126,6 @@ const PortfolioPage = () => {
               <MdOutlineVisibility className="w-5 h-5" /> View Live Project
             </a>
           </div>
-
-          <div className="order-1 lg:order-2 w-full">
-             {/* Passes an ARRAY of images to the horizontal slider */}
-             <ProjectSlider images={[
-               "/images/pangarent-1.webp",
-               "/images/pangarent-2.webp",
-             ]} />
-          </div>
-
         </div>
 
       </div>
